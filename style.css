@@ -1,0 +1,115 @@
+*{
+    margin : 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* background: #f2f2f2; */
+}
+#header{
+    width: fit-content;
+    height: fit-content;
+    /* background-size: contain; */
+    /* background-position: center; */
+}
+video{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.banner-text{
+      position: absolute;
+      top:40%;
+      left: 40%;
+      transform: translate(-40%, -40%);
+      text-align: center;
+      border: 1px solid transparent;
+      /* border-radius: 5px; */
+      /* box-shadow: 4px 4px 4px 4px lightblue; */
+}
+.banner-text h2{
+    font-size: 50px;
+    font-family: sans-serif;
+    color:white;
+    margin: 0px;
+    text-transform: capitalize;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #3eabaf, 0 0 40px #3eabaf, 0 0 50px #3eabaf, 0 0 60px #3eabaf, 0 0 70px #3eabaf;
+}
+h1{
+    font-family: sans-serif;
+    color:white;
+    margin:0px;
+    text-transform: capitalize;
+    text-shadow: 3px 3px cornflowerblue;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #3eabaf, 0 0 40px #3eabaf, 0 0 50px #3eabaf, 0 0 60px #3eabaf, 0 0 70px #3eabaf;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #4e8ae4, 0 0 40px #4e8ae4, 0 0 50px #4e8ae4, 0 0 60px #4e8ae4, 0 0 70px #4e8ae4, 0 0 80px #4e8ae4;
+    }
+  }
+h1::before{
+    content: 'new beginnings';
+    font-size: 300%;
+    animation: animate 18s infinite ;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    shape-rendering: auto;
+}
+@keyframes animate{
+    0%{
+        font-size: 300%;
+        opacity: 1;
+    }
+    10%{
+        font-size: 300%;
+        opacity:0;
+    }
+    20%{
+        font-size: 300%;
+        opacity:1;
+        content: 'New Goals';
+    }
+    30%{
+        font-size: 300%;
+        opacity:0;
+    }
+    40%{
+        font-size: 300%;
+        opacity:1;
+        content: 'and a new way to go';
+        
+    }
+    50%{
+        font-size: 300%;
+        opacity:0;
+    }
+    60%{
+        font-size: 300%;
+        opacity:1;
+        content:'wish you all a';
+        
+
+    }
+    70%{
+        font-size: 300%;
+        opacity:0;
+    }
+    85%{
+        font-size: 300%;
+        opacity:1;
+        content:' happy New Year 2022';
+    }
+   
+    100%{
+        font-size: 300%;
+        opacity:0;
+    }
+}
